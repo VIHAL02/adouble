@@ -28,7 +28,7 @@ logger = logging.getLogger("FoodPrediction")
 
 # Load the model from the .dill file
 @st.cache_resource
-def load_model(filename: str = "adouble.dill") -> object:
+def load_model(filename: str = "adouble1.dill") -> object:
     try:
         with open(filename, 'rb') as f:
             predictor = dill.load(f)
